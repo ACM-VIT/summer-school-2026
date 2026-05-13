@@ -82,25 +82,33 @@
   }
 
   /* CTA: button with nested icon island */
-  .btn-ink {
+  .btn-ink,
+  .btn-paper {
     position: relative;
     display: inline-flex;
     align-items: center;
-    gap: 0.7rem;
-    padding: 0.55rem 0.55rem 0.55rem 1.25rem;
+    height: 48px;
     border-radius: 999px;
+    font-size: 13.5px;
+    line-height: 1;
+    transition: transform 600ms cubic-bezier(0.32, 0.72, 0, 1),
+      background 400ms cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 400ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .btn-ink:active,
+  .btn-paper:active {
+    transform: scale(0.985);
+  }
+
+  .btn-ink {
+    gap: 0.7rem;
+    padding: 0 0.4rem 0 1.4rem;
     background: rgb(20 18 16);
     color: rgb(250 247 240);
-    font-size: 13.5px;
     border: 1px solid rgb(20 18 16);
     box-shadow:
       0 1px 0 rgba(255, 255, 255, 0.16) inset,
       0 12px 32px -16px rgba(20, 18, 16, 0.45);
-    transition: transform 600ms cubic-bezier(0.32, 0.72, 0, 1),
-      background 400ms cubic-bezier(0.22, 1, 0.36, 1);
-  }
-  .btn-ink:active {
-    transform: scale(0.985);
   }
   .btn-ink:hover {
     background: rgb(40 36 28);
@@ -109,8 +117,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     border-radius: 999px;
     background: rgb(255 255 255 / 0.12);
     border: 1px solid rgb(255 255 255 / 0.18);
@@ -121,24 +129,13 @@
   }
 
   .btn-paper {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0.7rem 1.2rem;
-    border-radius: 999px;
+    padding: 0 1.4rem;
     background: rgb(254 252 247);
     color: rgb(20 18 16);
     border: 1px solid rgb(214 207 192);
-    font-size: 13.5px;
-    transition: transform 600ms cubic-bezier(0.32, 0.72, 0, 1),
-      border-color 400ms;
   }
   .btn-paper:hover {
     border-color: rgb(20 18 16 / 0.4);
-  }
-  .btn-paper:active {
-    transform: scale(0.985);
   }
 
   .reveal {
