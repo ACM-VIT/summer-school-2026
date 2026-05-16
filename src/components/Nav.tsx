@@ -37,10 +37,10 @@ export default function Nav() {
           {/* Brand */}
           <a href="#top" className={`${shell} pl-3 pr-4 gap-2.5`}>
             <img
-              src="/images/logos/acm.svg"
+              src="/images/logos/acm-mark.png"
               alt="ACM"
-              className="h-4.5 w-auto"
-              style={{ height: "18px" }}
+              className="w-auto"
+              style={{ height: "22px" }}
             />
             <span className="hidden sm:inline-block h-3 w-px bg-ink-line" />
             <span className="hidden sm:flex items-baseline gap-1.5">
